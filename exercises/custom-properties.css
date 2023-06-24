@@ -3,6 +3,50 @@
 /* CSS variables should be named with alphanumeric characters, underscores, and dashes. Remember that they are case-sensitive. */
 
 :root {
+    /* this is basically css version of varables */
+    --text-base-: #333;
+    --text-primary: #9e088dee;
+    --base-font-family: Arial, sans-sanrif;
+    --alt-font-family: Georgia, serif;
+    
   
 }
+
+body{
+    color: var(--text-base-);
+    font-family: var(--base-font-family); 
+}
+
+h1,h2{
+    font-family: var(--alt-font-family);
+}
+
+h2{
+    color: var(--text-primary);
+}
+ 
+.logical-card{
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    padding-block: 1rem;
+    padding-inline :1rem;
+    padding-inline-end: 2rem;
+    display: flex;
+}
+
+.avatar {
+    background-color:lightblue;
+    inline-size: 80px;
+    block-size: 80px;
+    flex-shrink: 0;
+    margin-right: 2rem;
+    border-radius: 100%;
+    margin-inline-end: 2rem;
+}
+
+/* margin-block-end: 10px this is used to fix problems when when using a languege problems (logical properties)*/
+/* wrting mode referes to way langueges are written */
 
